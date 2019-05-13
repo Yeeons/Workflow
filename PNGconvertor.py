@@ -10,13 +10,13 @@ from PIL import Image
 
 # image convertor
 def imageconvertor(dir, type):
-    for files in os.listdir(dir):
-		png2jpg_name = files.split(".")
-
-		# converts images
-		try:
-			if(png2jpg_name[1] == type):
-				img_org = Image.open(files)
+	for files in os.listdir(dir):
+	png2jpg_name = files.split(".")
+	
+	# converts images
+	try:
+		if(png2jpg_name[1] == type):
+			img_org = Image.open(files)
 				rgb_im = img_org.convert('RGB')
 				rgb_im.save(png2jpg_name[0] + ".jpg", "JPEG", subsampling=0, quality = 100)
 
