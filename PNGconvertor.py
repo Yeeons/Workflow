@@ -22,5 +22,5 @@ def imageconvertor(dir, type):
 
 				# removes the png
 				os.remove(files)
-		except:
-			continue
+	except:
+		continue
