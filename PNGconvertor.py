@@ -2,7 +2,6 @@
 # Removes the original after
 
 # imageconvertor(current_dir, "png") 
-
 ## requires PILLOW
 
 import os
